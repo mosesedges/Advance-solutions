@@ -135,3 +135,20 @@ print(result)
 output: deque(["Which, but their children's end, nought could remove,\n", "Is now the two hours' traffic of our stage;\n", 'The which if you with patient ears attend,\n', 'What here shall miss, our toil shall strive to mend.\n', 'SCENE I. Verona. A public place.'], maxlen=5)
 '''
 
+
+
+
+'''
+the namedtuple from the collection module accepts two string arguments first the name of it instance and second a delimited list of strings where are elements of the tuple or keys of the of the object
+
+'''
+
+from collections import namedtuple
+
+parts = namedtuple('parts', 'first_name last_name age gender post_code')
+
+details = parts(first_name ='Mikey', last_name ='Mouse', age =8, gender ='Male', post_code='N14 EBD')
+
+print(details.post_code) #output: N14 EBD
+
+
